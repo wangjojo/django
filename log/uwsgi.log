@@ -1,0 +1,179 @@
+*** Starting uWSGI 2.0.15 (64bit) on [Wed Apr  4 09:04:22 2018] ***
+compiled with version: 5.4.0 20160609 on 14 November 2017 08:14:08
+os: Linux-4.13.0-37-generic #42~16.04.1-Ubuntu SMP Wed Mar 7 16:03:28 UTC 2018
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /mnt/hgfs/workspace/django/ali2
+detected binary path: /usr/local/bin/uwsgi
+chdir() to /mnt/hgfs/workspace/django/ali2
+your processes number limit is 3645
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+unable to find group www=data
+*** Starting uWSGI 2.0.15 (64bit) on [Wed Apr  4 09:10:00 2018] ***
+compiled with version: 5.4.0 20160609 on 14 November 2017 08:14:08
+os: Linux-4.13.0-37-generic #42~16.04.1-Ubuntu SMP Wed Mar 7 16:03:28 UTC 2018
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /mnt/hgfs/workspace/django/ali2
+detected binary path: /usr/local/bin/uwsgi
+chdir() to /mnt/hgfs/workspace/django/ali2
+your processes number limit is 3645
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+unable to find group www=data
+*** Starting uWSGI 2.0.15 (64bit) on [Wed Apr  4 09:15:42 2018] ***
+compiled with version: 5.4.0 20160609 on 14 November 2017 08:14:08
+os: Linux-4.13.0-37-generic #42~16.04.1-Ubuntu SMP Wed Mar 7 16:03:28 UTC 2018
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /mnt/hgfs/workspace/django/ali2
+detected binary path: /usr/local/bin/uwsgi
+chdir() to /mnt/hgfs/workspace/django/ali2
+your processes number limit is 3645
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+unable to find group www=data
+*** Starting uWSGI 2.0.15 (64bit) on [Wed Apr  4 09:22:22 2018] ***
+compiled with version: 5.4.0 20160609 on 14 November 2017 08:14:08
+os: Linux-4.13.0-37-generic #42~16.04.1-Ubuntu SMP Wed Mar 7 16:03:28 UTC 2018
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /mnt/hgfs/workspace/django/ali2
+detected binary path: /usr/local/bin/uwsgi
+chdir() to /mnt/hgfs/workspace/django/ali2
+your processes number limit is 3645
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+unable to find group www=data
+*** Starting uWSGI 2.0.15 (64bit) on [Wed Apr  4 09:27:06 2018] ***
+compiled with version: 5.4.0 20160609 on 14 November 2017 08:14:08
+os: Linux-4.13.0-37-generic #42~16.04.1-Ubuntu SMP Wed Mar 7 16:03:28 UTC 2018
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /mnt/hgfs/workspace/django/ali2
+detected binary path: /usr/local/bin/uwsgi
+chdir() to /mnt/hgfs/workspace/django/ali2
+your processes number limit is 3645
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /run/ali2.sock fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x18fa8b0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 249216 bytes (243 KB) for 4 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x18fa8b0 pid: 21232 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 21232)
+spawned uWSGI worker 1 (pid: 21234, cores: 2)
+spawned uWSGI worker 2 (pid: 21235, cores: 2)
+[pid: 21234|app: 0|req: 1/1] 192.168.74.1 () {44 vars in 850 bytes} [Wed Apr  4 16:27:12 2018] GET / => generated 74 bytes in 67 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 21235|app: 0|req: 1/2] 192.168.74.1 () {42 vars in 829 bytes} [Wed Apr  4 16:27:20 2018] GET /blog/ => generated 946 bytes in 132 msecs (HTTP/1.1 200) 3 headers in 109 bytes (2 switches on core 0)
+Wed Apr  4 16:28:12 2018 - *** /mnt/hgfs/workspace/django/ali2/reload has been touched... grace them all !!! ***
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 21234)...
+Gracefully killing worker 2 (pid: 21235)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /mnt/hgfs/workspace/django/ali2
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (/run/ali2.sock)
+running /usr/local/bin/uwsgi
+[uWSGI] getting INI configuration from ./conf/ali2_uwsgi.ini
+*** Starting uWSGI 2.0.15 (64bit) on [Wed Apr  4 16:28:13 2018] ***
+compiled with version: 5.4.0 20160609 on 14 November 2017 08:14:08
+os: Linux-4.13.0-37-generic #42~16.04.1-Ubuntu SMP Wed Mar 7 16:03:28 UTC 2018
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /mnt/hgfs/workspace/django/ali2
+detected binary path: /usr/local/bin/uwsgi
+chdir() to /mnt/hgfs/workspace/django/ali2
+your processes number limit is 3645
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited UNIX address /run/ali2.sock fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x1f3f820
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 249216 bytes (243 KB) for 4 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x1f3f820 pid: 21232 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 21232)
+spawned uWSGI worker 1 (pid: 21242, cores: 2)
+spawned uWSGI worker 2 (pid: 21243, cores: 2)
+[pid: 21242|app: 0|req: 1/1] 192.168.74.1 () {44 vars in 850 bytes} [Wed Apr  4 16:43:17 2018] GET / => generated 74 bytes in 62 msecs (HTTP/1.1 404) 3 headers in 100 bytes (1 switches on core 0)
+[pid: 21243|app: 0|req: 1/2] 192.168.74.1 () {42 vars in 829 bytes} [Wed Apr  4 16:43:20 2018] GET /blog/ => generated 946 bytes in 104 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 21242|app: 0|req: 2/3] 192.168.74.1 () {44 vars in 895 bytes} [Wed Apr  4 16:43:29 2018] GET /blog/detail/1/ => generated 3814 bytes in 58 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 1)
+[pid: 21242|app: 0|req: 3/4] 192.168.74.1 () {44 vars in 895 bytes} [Wed Apr  4 16:43:37 2018] GET /blog/detail/1/ => generated 3814 bytes in 20 msecs (HTTP/1.1 200) 5 headers in 278 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.15 (64bit) on [Wed Apr  4 09:45:05 2018] ***
+compiled with version: 5.4.0 20160609 on 14 November 2017 08:14:08
+os: Linux-4.13.0-37-generic #42~16.04.1-Ubuntu SMP Wed Mar 7 16:03:28 UTC 2018
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 1
+current working directory: /mnt/hgfs/workspace/django/ali2
+detected binary path: /usr/local/bin/uwsgi
+chdir() to /mnt/hgfs/workspace/django/ali2
+your processes number limit is 3645
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /run/ali2.sock fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.5.2 (default, Nov 23 2017, 16:37:01)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x14dd8b0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 249216 bytes (243 KB) for 4 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x14dd8b0 pid: 21459 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 21459)
+spawned uWSGI worker 1 (pid: 21461, cores: 2)
+spawned uWSGI worker 2 (pid: 21462, cores: 2)

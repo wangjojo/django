@@ -1,0 +1,87 @@
+{% extends "test_base.html" %}
+{% block title %}
+个人信息修改
+{% endblock %}
+
+{% block content %}
+<h2>Here!</h2>
+<div id="app">
+    <table class="table table-hover form-group">
+        <thead>
+            <tr>
+                <th>编号</th>
+                <th>项目</th>
+                <th>值</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>0</td>
+                <td>账号(不可改)</td>
+                <td><span v-text="email" class="form-control"></span></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>姓名</td>
+                <td><input v-model="name" class="form-control"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>性别</td>
+                <td><input v-model="sex" class="form-control"></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>工作</td>
+                <td><input v-model="job" class="form-control"></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>电话号码</td>
+                <td><input v-model="phone" class="form-control"></td>
+            </tr>
+        </tbody>
+    </table>
+    <button @click="submit" class="btn btn-primary">保存修改</button>
+</div>
+{% endblock %}
+
+{% block vue_js %}
+<script type="text/javascript">
+    var vm = new Vue({
+        el:'#app',
+        data: {
+            email: '{{ request.user.email }}',
+            name: '{{ request.user.name }}',
+            sex: '{{ request.user.sex }}',
+            job: '{{ request.user.job }}',
+            phone: '{{ request.user.phone }}',
+        },
+        methods:{
+            submit(){
+                data_to_send = {
+                    name: this.name,
+                    sex: this.sex,
+                    job: this.job,
+                    phone: this.phone,
+                };
+                console.log(data_to_send);
+                data_to_send = JSON.stringify(data_to_send);
+                console.log(data_to_send);
+
+                $.post('/accounts/profile/',data_to_send,
+                    function(r,err){
+                        if (err === 'success'){
+                            alert('修改已保存')
+                            return location.assign('/');
+                        }
+                        else{
+                            return console.log(err);
+                        }
+                    });
+            },
+        },
+    });
+</script>
+{% endblock %}
+

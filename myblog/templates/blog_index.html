@@ -1,0 +1,20 @@
+{% extends "test_base.html" %}
+{% block content %}
+    <div id='app' class="form-group">
+        <p class="form-control" v-text="aaa"></p>
+            <span>Input here:</span>
+            <input class="form-control" v-model="aaa">
+    </div>
+{% endblock %}
+
+    <script type="text/javascript">
+        var vm = new Vue({
+            el:'#app',
+            data:{
+                aaa:'',
+            }
+        })
+    </script>
+
+</body>
+</html>
